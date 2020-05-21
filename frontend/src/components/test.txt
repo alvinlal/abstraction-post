@@ -1,0 +1,54 @@
+0: {type: "header", data: {…}}
+1: {type: "image", data: {…}}
+2: {type: "paragraph", data: {…}}
+3: {type: "header", data: {…}}
+4:
+data:
+items: (5) ["Brooklyn", "Manhattan", "Statue of liberty", "EMP", "Times square"]
+style: "ordered"
+__proto__: Object
+type: "list"
+__proto__: Object
+5: {type: "header", data: {…}}
+6:
+data:
+items: (3) ["Royal Bank of Spain", "Estadio Santiago Bernabue", "Camp Nou of Barcelona"]
+style: "unordered"
+__proto__: Object
+type: "list"
+__proto__: Object
+7:
+data:
+content: Array(3)
+0: (2) ["&nbsp; &nbsp; &nbsp;; RainFall", "&nbsp; &nb; &nbsp;Harvest"]
+1: (2) ["&nbsp; &nbsp; 16m", "&nbsp;5000kg"]
+2: (2) ["&nbsp; &nbsp; 20m", "&nbsp;6000kg"]
+length: 3
+__proto__: Array(0)
+__proto__: Object
+type: "table"
+__proto__: Object
+8:
+data:
+items: Array(2)
+0:
+checked: true
+text: "checktItem One"
+__proto__: Object
+1:
+checked: false
+text: "Checkitem Two"
+__proto__: Object
+length: 2
+__proto__: Array(0)
+__proto__: Object
+type: "checkList"
+__proto__: Object
+length: 9
+__proto__: Array(0)
+time: 1589611215411
+version: "2.17.0"
+__proto__: Object
+
+data: {title: "Do not use dangeroslySetInnerhtml", message: "blah blh"}
+type: "note"

@@ -1,0 +1,1035 @@
+body {
+  padding: 0em 0.5em;
+  font-family: "Segoe UI";
+
+  /* min-width: 700px; */
+}
+button:focus {
+  outline: white;
+}
+input:focus {
+  outline: white;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  box-shadow: 0 0 0 30px white inset !important;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  border-bottom: 2px solid #ada8a8;
+  justify-content: space-between;
+}
+.header-title a {
+  width: 30%;
+  text-decoration: none;
+  font-family: "Segoe UI";
+  font-weight: 500;
+  font-size: 30px;
+  color: #707070;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  width: 70%;
+  justify-content: flex-end;
+  margin-right: 10px;
+}
+.nav-link {
+  text-decoration: none;
+  color: #8b8686;
+  font-family: "Segoe UI";
+  font-size: 20px;
+}
+.nav-item {
+  margin-right: 1em;
+}
+.profilePic {
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  border: 50%;
+}
+
+.columns {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+}
+.firstColumn {
+  width: 70%;
+  height: auto;
+}
+
+.secondColumn {
+  width: 30%;
+  height: auto;
+}
+.dropDown {
+  position: relative;
+  display: inline-block;
+  transition: all 0.7s ease;
+}
+.dropBtnMain {
+  background-color: white;
+  color: #707070;
+  border: none;
+  font-family: "Segoe UI";
+  width: 100px;
+  height: 20px;
+}
+
+.dropdownContent {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  z-index: 1;
+}
+.arrowDiv {
+  width: 100%;
+  height: 10px;
+  display: none;
+  z-index: 9999;
+}
+
+.arrow-up {
+  width: 0;
+  height: 0;
+  border-left: 13px solid transparent;
+  border-right: 13px solid transparent;
+  display: none;
+  z-index: 1;
+  border-bottom: 13px solid rgb(158, 154, 154);
+}
+.dropButton {
+  color: #707070;
+  display: none;
+  background-color: white;
+  font-family: "Segoe UI";
+  width: 100%;
+  border: none;
+  height: 60px;
+  text-decoration: none;
+  appearance: none;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+.shareDropDownContent {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 50px;
+  z-index: 1;
+  height: 50px;
+}
+.shareDropDownBtn {
+  width: 130px;
+  height: 40px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  display: flex;
+  align-items: center;
+  left: -50px;
+  border-radius: 20px;
+  justify-content: center;
+}
+.shareImg {
+  height: 35px;
+  width: 35px;
+}
+.shareImg:hover {
+  transform: scale(1.2);
+}
+
+.dropdownContentSettings {
+  display: none;
+  position: absolute;
+  right: 0px;
+  min-width: 160px;
+  z-index: 1;
+  height: 60px;
+}
+
+.dropdownContentSettings .arrow-up {
+  width: 0;
+  height: 0;
+  border-left: 13px solid transparent;
+  border-right: 13px solid transparent;
+  display: none;
+  z-index: 1;
+  margin-left: 180px;
+  border-bottom: 13px solid rgb(158, 154, 154);
+}
+
+.dropButtonSettings {
+  text-align: center;
+  color: #707070;
+  display: block;
+  font-size: 20px;
+  background-color: white;
+  font-family: "Segoe UI";
+  width: 100%;
+  border: none;
+  height: 60px;
+  text-decoration: none;
+  appearance: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+.dropButtonSettings:hover {
+  background-color: #707070;
+  color: white;
+}
+
+.dropButton:hover {
+  background-color: rgb(150, 156, 156);
+  color: white;
+}
+.dropDown:hover .dropdownContent {
+  display: block;
+}
+.dropDown:hover .shareDropDownContent {
+  display: block;
+}
+.dropDown:hover .dropdownContentSettings {
+  display: block;
+}
+.dropDown:hover .dropButton {
+  display: block;
+}
+.dropDown:hover .arrow-up {
+  display: block;
+}
+.dropDown:hover .arrowDiv {
+  display: block;
+}
+
+.posts {
+  height: auto;
+  width: 100%;
+  margin-top: 5px;
+  border-right: 3px solid #ada8a8;
+}
+.postCard {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 15px;
+  height: auto;
+}
+.postCard:hover {
+  cursor: pointer;
+}
+.image {
+  /* background-size: cover; */
+  height: auto;
+  width: 20%;
+  /* background-repeat: no-repeat; */
+}
+.info {
+  height: auto;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 8px;
+  justify-content: space-between;
+}
+.info p {
+  font-family: "Segoe UI";
+  font-size: 12px;
+  font-style: italic;
+  color: #707070;
+  margin: 0px 0px;
+}
+
+.postTitle {
+  font-family: "Segoe UI";
+  font-size: 1em;
+  font-weight: bold;
+  margin: 0px;
+  height: auto;
+  margin-top: 0px;
+  overflow: hidden;
+}
+
+.subTitle {
+  font-family: "Segoe UI";
+  font-size: 0.8em;
+  height: auto;
+  margin-top: 3px;
+  padding: 3px;
+  margin-bottom: 4px;
+  color: #707070;
+  display: inline-block;
+
+  overflow: hidden;
+}
+
+.dateAndTools {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.date {
+  align-self: flex-start;
+  color: #707070;
+  font-family: "Segoe UI";
+  display: inline-block;
+  word-break: break-all;
+  width: 100%;
+}
+.tools {
+  display: flex;
+  flex-direction: row;
+  width: 25%;
+  height: 25px;
+  align-self: flex-end;
+}
+.toolsBtn {
+  width: calc(100% / 3);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+.toolsBtn:hover {
+  cursor: pointer;
+}
+
+.signupContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #707070;
+  height: 500px;
+  width: 30%;
+  margin: auto;
+  min-width: 400px;
+  margin-top: 20px;
+}
+.form {
+  width: 100%;
+}
+
+.signUpTextField {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #707070;
+  padding: 5px;
+  margin-top: 20px;
+  height: 30px;
+  color: #707070;
+  font-size: 1em;
+}
+.signUpTextField:focus {
+  outline: none;
+  background-color: white;
+}
+.signUpFields {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 80%;
+}
+
+.signUpBtn {
+  background-color: white;
+  border: 1px solid #707070;
+  text-decoration: none;
+  margin: 20px 0px;
+  height: 40px;
+  display: inline-block;
+  border-radius: 20px;
+}
+.signUpBtn:hover {
+  cursor: pointer;
+  background-color: rgb(150, 156, 156);
+}
+.line {
+  border-bottom: 2px solid #707070;
+  width: 100%;
+  /* height: 2px; */
+  margin: auto;
+}
+.google {
+  height: 40px;
+  width: 100%;
+  border: none;
+  background-color: #db3236;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  font-family: "Segoe UI";
+}
+
+.googleLogo {
+  width: 30px;
+  height: 30px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.facebook {
+  height: 40px;
+  width: 100%;
+  border: none;
+  background-color: #3b5998;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  font-family: "Segoe UI";
+}
+.facebookLogo {
+  width: 40px;
+  height: 40px;
+  margin-left: 8px;
+  margin-right: 5px;
+}
+
+.error {
+  color: red;
+  font-family: "Segoe UI";
+}
+.success {
+  color: rgb(0, 255, 64);
+  font-family: "Segoe UI";
+}
+#editorJs {
+  font-family: "Segoe UI";
+  height: auto;
+  min-height: 500px;
+  width: 100%;
+  margin: auto;
+  box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.2);
+  margin-top: 10px;
+  z-index: -1;
+}
+.publishOptions {
+  display: flex;
+  flex-direction: column;
+
+  height: 120px;
+  width: 95%;
+  background-color: #707070;
+  color: white;
+  margin: 30px auto;
+}
+.publishArticlebtn {
+  display: block;
+  margin: auto;
+  border: none;
+  width: 150px;
+  height: 50px;
+  background-color: #707070;
+  color: white;
+  border: 2px solid white;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-family: "Segoe UI";
+}
+.publishArticlebtn:hover {
+  cursor: pointer;
+  background-color: white;
+  color: #707070;
+}
+
+.tag {
+  margin: 10px;
+  border: none;
+  background-color: #707070;
+  border-bottom: 2px solid white;
+  width: 300px;
+  align-self: center;
+  appearance: none;
+  color: white;
+}
+.publishOptions input::placeholder {
+  font-family: "Segoe UI";
+  font-size: 1rem;
+  color: white;
+}
+.mainContent {
+  font-family: "Segoe UI";
+  height: 3000px;
+  width: 80%;
+  display: flex;
+  /* background-color: tomato; */
+  flex-direction: column;
+  margin: auto;
+  padding-top: 10px;
+}
+.postViewTitle {
+  font-family: "Segoe UI";
+  font-size: 2em;
+  font-weight: bold;
+  margin: auto;
+  width: 70%;
+  /* background-color: violet; */
+}
+
+.postDateAndTools {
+  display: flex;
+  flex-direction: row;
+  /* align-items: center; */
+  width: 70%;
+  /* background-color: turquoise; */
+  height: 40px;
+  margin: 20px auto;
+  justify-content: space-between;
+}
+.postDate {
+  font-family: "Segoe UI";
+  font-size: 1em;
+  display: flex;
+  align-items: center;
+  align-self: flex-start;
+}
+.postTools {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  /* background-color: #3b5998; */
+}
+.postToolsBtn {
+  height: 25px;
+  width: 25px;
+  margin: 0px 5px;
+}
+.calender {
+  height: 30px;
+  width: 30px;
+  margin-right: 5px;
+}
+.postParagraph {
+  font-family: "Segoe UI";
+  text-align: left;
+  font-size: 1.1em;
+  width: 80%;
+  margin: 5px auto;
+}
+.postHeadings {
+  font-family: "Segoe UI";
+  width: 80%;
+  margin: 5px auto;
+  font-weight: bold;
+}
+.postImage {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px auto;
+  display: flex;
+  flex-direction: column;
+}
+.postImageStretch {
+  margin: 5px auto;
+  margin-left: -14%;
+  margin-right: -14%;
+  display: flex;
+  flex-direction: column;
+}
+.postImageStretch img {
+  height: auto;
+  width: 100%;
+}
+.postImage img {
+  object-fit: cover;
+  max-width: 100%;
+  height: auto;
+}
+.postCaption {
+  font-family: "Segoe UI";
+  font-size: 1em;
+  font-style: italic;
+  width: 80%;
+  margin: 0px auto;
+  display: flex;
+  justify-content: center;
+}
+.postGist {
+  margin: 5px auto;
+  width: 80%;
+}
+.postCode {
+  padding: 10px;
+  width: 80%;
+  margin: 5px auto;
+}
+.postEmbeded {
+  /* background-color: #3b5998; */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+  margin: 5px auto;
+  height: auto;
+}
+.postDelimiter {
+  display: flex;
+  justify-content: center;
+}
+.postTable {
+  width: 80%;
+  margin: 5px auto;
+  /* background-color: #3b5998; */
+  display: flex;
+  justify-content: center;
+}
+.postTh {
+  border: 1px solid black;
+  width: 40%;
+  text-align: center;
+}
+.postTd {
+  width: 40%;
+  text-align: center;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+}
+.postList {
+  width: 80%;
+  margin: 5px 5px 0px 30px;
+}
+.postCheckList {
+  display: flex;
+  flex-direction: column;
+  margin: 5px 5px 0px 10%;
+  width: 80%;
+}
+.postCheckItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.postCheckBox {
+  width: 20px;
+  height: 20px;
+}
+.postNotes {
+  width: 80%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  margin: 5px auto;
+  padding: 10px;
+}
+.postNoteTitle {
+  font-family: "Segoe UI";
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.postNoteMessage {
+  font-family: "Segoe UI";
+  font-size: 1.2em;
+}
+.searchDiv {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.searchField {
+  margin: 10px auto;
+  border: none;
+  border-bottom: 2px solid #707070;
+  width: 300px;
+  height: 30px;
+  font-family: "Segoe UI";
+}
+
+.searchResults {
+  height: auto;
+  width: 80%;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.bookmarks {
+  width: 80%;
+  margin: auto;
+  height: 500px;
+}
+
+.spinner {
+  margin: auto;
+  border: 10px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 10px solid #3498db;
+  width: 30px;
+  height: 30px;
+  -webkit-animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.gistInput {
+  width: 100%;
+  border: none;
+}
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 9999;
+}
+
+.modal-main {
+  position: absolute;
+  background: white;
+  width: 50%;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  min-width: 600px;
+  transform: translate(-50%, -50%);
+  background-image: url("./assets/jailam-rashad-swnvvNsfr94-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.blackOverlay {
+  height: auto;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+.blackOverlay .title {
+  width: 100%;
+  height: auto;
+  font-family: "Segoe UI";
+  font-size: 1.5em;
+  /* background-color: royalblue; */
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.blackOverlay .title label {
+  margin-left: 1em;
+  margin-right: 16%;
+}
+.blackOverlay .title .text {
+  font-size: 1rem;
+  font-family: "Segoe UI";
+  padding-right: 10px;
+}
+.blackOverlay .description {
+  width: 100%;
+  height: auto;
+  font-family: "Segoe UI";
+  font-size: 1.5em;
+  /* background-color: royalblue; */
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.blackOverlay .description .text {
+  font-size: 1rem;
+  font-family: "Segoe UI";
+  padding-right: 10px;
+}
+.blackOverlay .description label {
+  margin-left: 1em;
+  margin-right: 5%;
+}
+.blackOverlay .modalTag {
+  width: 100%;
+  height: auto;
+  font-family: "Segoe UI";
+  font-size: 1.5em;
+  /* background-color: royalblue; */
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.blackOverlay .modalTag label {
+  margin-left: 1em;
+  margin-right: 16%;
+}
+/* .blackOverlay .modalTag input {
+  font-family: "Segoe UI";
+  border: none;
+  border-bottom: 2px solid white;
+  appearance: none;
+  background-color: transparent;
+  color: white;
+  font-size: 1em;
+  width: 300px;
+} */
+
+.display-block {
+  display: block;
+}
+
+.display-none {
+  display: none;
+}
+
+.publishModalClose {
+  width: 40px;
+  height: 40px;
+  align-self: flex-end;
+  border: none;
+}
+.publishModalClose:hover {
+  background-color: #707070;
+  color: white;
+  cursor: pointer;
+}
+.publishBtn {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0px;
+}
+.publishBtn button {
+  border: none;
+  border-radius: 25px;
+  height: 50px;
+  width: 200px;
+  font-family: "Segoe UI";
+  font-size: 1rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.publishBtn button:hover {
+  background-color: #707070;
+  color: white;
+  cursor: pointer;
+}
+.publishSpinner {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  border: 5px solid white;
+  border-top: 5px solid rgb(82, 138, 190);
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+  margin-right: 10px;
+}
+.masterStackDiv {
+  width: auto;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+}
+.stackInput input[type="text"] {
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-family: "Segoe UI";
+  font-size: 0.8em;
+  float: right;
+  margin-left: 5px;
+  width: auto;
+  border-bottom: 2px solid white;
+}
+
+.stackTag {
+  background-color: #707070;
+  color: white;
+  height: 20px;
+  width: auto;
+  border-radius: 10px;
+  font-size: 0.7em;
+  padding: 5px;
+  margin: 3px;
+  display: flex;
+  align-items: center;
+}
+
+.stackTags {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: auto;
+}
+.tagCloseBtn {
+  border: none;
+  background-color: transparent;
+  border-radius: 5px;
+}
+.tagCloseBtn:hover {
+  background-color: white;
+  cursor: pointer;
+}
+.HomeRight {
+  display: flex;
+  flex-direction: column;
+  padding: 3px;
+  /* background-color: #3498db; */
+  align-items: center;
+  height: 500px;
+  width: auto;
+  margin-left: 5px;
+}
+
+.postCardRight {
+  /* background-color: #db3236; */
+  border-radius: 10px;
+
+  height: auto;
+  margin: 5px auto;
+  color: white;
+  font-family: "Segoe UI";
+
+  width: 100%;
+  background-size: cover;
+}
+/* .postCardRight img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+} */
+.dateAndToolsRight {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* background-color: cornflowerblue; */
+  height: auto;
+  justify-content: space-between;
+}
+.dateRight {
+  align-self: flex-start;
+  font-family: "Segoe UI";
+  /* background-color: blue; */
+  height: 25px;
+}
+.toolsRight {
+  display: flex;
+  flex-direction: row;
+  width: 25%;
+  height: 25px;
+  align-self: flex-end;
+  /* background-color: aquamarine; */
+}
+
+.tagsRight {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  height: auto;
+}
+.postCardRightTitle {
+  height: auto;
+  font-weight: bold;
+}
+.postCardRightDescription {
+  margin-top: 3px;
+  margin-bottom: 4px;
+  font-size: 0.8em;
+}
+.postRightblackOverlay {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+}
+.postRightblackOverlay:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+}
+.shareDropDownBtnRight {
+  height: 35px;
+  width: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  position: absolute;
+  border-radius: 25px;
+  /* width: 200px; */
+  background-color: white;
+  /* margin-right: 30px; */
+  /* margin-top: 10px; */
+}
+.arrow-upRight {
+  width: 0;
+  height: 0;
+  border-left: 13px solid transparent;
+  border-right: 13px solid transparent;
+  display: none;
+  z-index: 1;
+  margin-left: 50px;
+  border-bottom: 13px solid rgb(158, 154, 154);
+}
+.shareDropDownContentRight {
+  width: 120px;
+  /* height: 100px; */
+  height: 35px;
+  /* background-color: violet; */
+  display: none;
+  position: absolute;
+  left: -50px;
+}
+.dropDownRight {
+  position: relative;
+  display: inline-block;
+}
+.dropDownRight:hover .shareDropDownContentRight {
+  display: block;
+}
+.dropDownRight:hover .arrow-upRight {
+  display: flex;
+}
